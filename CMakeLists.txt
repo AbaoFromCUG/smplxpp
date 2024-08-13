@@ -154,7 +154,7 @@ endif()
 
 # Zlib
 find_package(ZLIB QUIET)
-if (ZLIB_FOUND)
+if (TARGET ZLIB::ZLIB)
     message( STATUS "Using system zlib" )
     set( DEPENDENCIES ${DEPENDENCIES} ZLIB::ZLIB )
 else()
